@@ -72,11 +72,16 @@ table {
 
 .form {
   width: 557px;
-  height: 400px;
+  overflow: hidden;
   background-color: #ffffff;
   border-radius: 10px;
   -webkit-box-shadow: 1px 1px 5px #222;
           box-shadow: 1px 1px 5px #222;
+}
+
+.form .section-body:last-child() {
+  background-color: red;
+  border-radius: 0 0 10px 10px;
 }
 
 .form .form-header {
@@ -109,7 +114,6 @@ table {
 .form .form-header #form-name {
   font-size: 14px;
   font-weight: bold;
-  font-family: 'Oswald', sans-serif;
 }
 
 .form .form-header #save-button {
@@ -118,10 +122,22 @@ table {
   cursor: pointer;
 }
 
+.form .form-body {
+  max-height: 350px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.form .form-body ::-webkit-scrollbar {
+  display: none;
+}
+
 .section .section-header {
   height: 35px;
   background-color: #f1f7f4;
-  font-family: 'Oswald', sans-serif;
   font-size: 12px;
   color: #00a250;
   display: -webkit-box;
@@ -132,6 +148,37 @@ table {
           align-items: center;
   padding-left: 10px;
   border-bottom: 2px solid #e7eae9;
+}
+
+.section .section-body {
+  display: -ms-grid;
+  display: grid;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #e7eae9;
+}
+
+.section .input {
+  padding: 10px 10px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section .input label {
+  font-size: 10px;
+  margin-bottom: 5px;
+  color: #999;
+}
+
+.section .input input {
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
 }
 
 html, body, #root, .App {

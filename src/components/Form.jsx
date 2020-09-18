@@ -30,7 +30,9 @@ export default class Form extends Component {
         return (
             <div className="form">
                 <FormHeader name={this.props.name} />
-                {items}
+                <div className="form-body">
+                    {items}
+                </div>
             </div>
         )
     }

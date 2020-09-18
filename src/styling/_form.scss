@@ -1,9 +1,14 @@
 .form {
     width: 557px;
-    height: 400px;
+    overflow: hidden;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 1px 1px 5px #222;
+
+    .section-body:last-child() {
+        background-color: red;
+        border-radius: 0 0 10px 10px;
+    }
 
     .form-header {
         display: flex;
@@ -28,13 +33,24 @@
         #form-name {
             font-size: 14px;
             font-weight: bold;
-            font-family: 'Oswald', sans-serif;
+            //font-family: 'Oswald', sans-serif;
         }
 
         #save-button {
             margin-right: 10px;
             margin-left: auto;
             cursor: pointer;
+        }
+    }
+
+    .form-body {
+        max-height: 350px;
+        overflow: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+
+        ::-webkit-scrollbar {
+            display: none;
         }
     }
 }
