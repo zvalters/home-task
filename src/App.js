@@ -1,24 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Dashboard from './components/Dashboard';
 
 function App() {
+
+  let data = {
+    "widgets": [
+      {
+        "id": 1,
+        "name": "Blobex Corporation",
+        "type": "form",
+        "items": [
+          {
+            "type": "section",
+            "header": "Opportunity details",
+            "columns": 2,
+            "items": [
+              {
+                "type": "input",
+                "label": "Opportunity name",
+                "value": "Acme - 1200 Widgets (Sample)",
+                "required": true
+              },
+              {
+                "type": "currency",
+                "label": "Ammount + currency",
+                "value": 146,
+                "symbol": "EUR"
+              },
+              {
+                "type": "currency",
+                "label": "Another input",
+                "value": 140000,
+                "symbol": "EUR",
+                "precision": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  };
+
+  console.log(data);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Dashboard data={data} />
     </div>
   );
 }
