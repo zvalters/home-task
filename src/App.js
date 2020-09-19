@@ -12,24 +12,40 @@ function App() {
         "items": [
           {
             "type": "section",
-            "header": "Opportunity details",
+            "header": "Opportunity Details",
             "columns": 2,
             "items": [
               {
                 "type": "input",
-                "label": "Opportunity name",
+                "label": "Opportunity Name",
                 "value": "Acme - 1200 Widgets (Sample)",
                 "required": true
               },
               {
+                "type": "dropdown-input",
+                "label": "Stage + Probability (%)",
+                "options": [
+                  "Proposal/Price Quote",
+                  "Option 2",
+                  "Option 3"
+                ],
+                "percentage": 0.5,
+                "required": true
+              },
+              {
                 "type": "currency",
-                "label": "Ammount + currency",
+                "label": "Amount + Currency",
                 "value": 146,
                 "symbol": "EUR"
               },
               {
+                "type": "date",
+                "label": "Close Date",
+                "value": "2014-09-04T00:00:00.000Z",
+              },
+              {
                 "type": "currency",
-                "label": "Another input",
+                "label": "Another Input",
                 "value": 140000,
                 "symbol": "EUR",
                 "precision": 2

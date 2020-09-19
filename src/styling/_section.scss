@@ -4,11 +4,11 @@
         height: 35px;
         background-color: #f1f7f4;
         //font-family: 'Oswald', sans-serif;
-        font-size: 12px;
+        font-size: 16px;
         color: #00a250;
         display: flex;
         align-items: center;
-        padding-left: 10px;
+        padding-left: 15px;
         border-bottom: 2px solid #e7eae9;
     }
 
@@ -17,24 +17,4 @@
         padding-bottom: 25px;
         border-bottom: 2px solid #e7eae9;
     }
-
-    .input {
-        padding: 10px 10px 0 10px;
-        display: flex;
-        flex-direction: column;
-
-        label {
-            font-size: 10px;
-            margin-bottom: 5px;
-            color: #999;
-        }
-
-        input {
-            height: 30px;
-            border-radius: 3px;
-            border: 1px solid #ccc;
-            padding-left: 10px;
-        }
-    }
-
 }

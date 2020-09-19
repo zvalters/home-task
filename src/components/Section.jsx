@@ -12,9 +12,10 @@ export default class Section extends Component {
         const items = this.props.section.items.map((item, index) => {
             switch(item.type) {
                 case "input":
-                    return <Input key={index} input={item} />
                 case "currency":
-                    return <Input key={index} input={item} />
+                case "dropdown-input":
+                case "date":
+                    return <Input key={index} input={item} />;
                 default:
                     return null;
             }
@@ -27,12 +28,12 @@ export default class Section extends Component {
                 <div className="section-header">
                     <h3>{this.props.section.header}</h3>
                 </div>
-                <form 
+                <div 
                     className="section-body" 
                     style={{gridTemplateColumns: "repeat(" + this.props.section.columns + ", " + columnSize + ")"}}
                     >
                     {items}
-                </form>
+                </div>
             </div>
         )
     }

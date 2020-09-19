@@ -4,6 +4,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/react-datepicker/2.8.0/react-datepicker.min.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -71,16 +72,16 @@ table {
 }
 
 .form {
-  width: 557px;
+  width: 710px;
   overflow: hidden;
   background-color: #ffffff;
   border-radius: 10px;
   -webkit-box-shadow: 1px 1px 5px #222;
           box-shadow: 1px 1px 5px #222;
-  position: relative;
+  position: absolute;
 }
 
-.form ::after {
+.form :after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -90,7 +91,7 @@ table {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(90%, rgba(255, 255, 255, 0.1)));
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1) 90%);
   width: 100%;
-  height: 15px;
+  height: 20px;
 }
 
 .form .form-header {
@@ -103,41 +104,42 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 40px;
+  height: 45px;
   border-radius: 10px 10px 0 0;
   border-bottom: 2px solid #e7eae9;
 }
 
 .form .form-header li {
-  font-size: 12px;
+  font-size: 16px;
   color: #00a250;
 }
 
 .form .form-header #cancel-button {
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: auto;
   color: #f9507c;
   cursor: pointer;
 }
 
 .form .form-header #form-name {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .form .form-header #save-button {
-  margin-right: 10px;
+  margin-right: 20px;
   margin-left: auto;
   cursor: pointer;
 }
 
 .form .form-body {
-  max-height: 350px;
+  max-height: 465px;
   overflow: scroll;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+  position: relative;
 }
 
 .form .form-body ::-webkit-scrollbar {
@@ -147,7 +149,7 @@ table {
 .section .section-header {
   height: 35px;
   background-color: #f1f7f4;
-  font-size: 12px;
+  font-size: 16px;
   color: #00a250;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,7 +157,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 10px;
+  padding-left: 15px;
   border-bottom: 2px solid #e7eae9;
 }
 
@@ -166,8 +168,8 @@ table {
   border-bottom: 2px solid #e7eae9;
 }
 
-.section .input {
-  padding: 10px 10px 0 10px;
+.input {
+  padding: 15px 15px 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,19 +177,54 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
-.section .input label {
-  font-size: 10px;
+.input label {
+  font-size: 14px;
   margin-bottom: 5px;
   color: #999;
 }
 
-.section .input input {
-  height: 30px;
-  border-radius: 3px;
+.input input, .input select {
+  height: 45px;
+  border-radius: 5px;
   border: 1px solid #ccc;
+  font-size: 16px;
   padding-left: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.input .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input .dropdown select {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 10px;
+  border-radius: 5px 0 0 5px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 1px 0;
+  padding-left: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("../images/Chevron.svg");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  background-size: 10px 5px;
+}
+
+.input .dropdown input {
+  width: 80px;
+  border-radius: 0 5px 5px 0;
+  padding-left: 15px;
 }
 
 html, body, #root, .App {

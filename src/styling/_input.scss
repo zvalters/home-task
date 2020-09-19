@@ -1,0 +1,48 @@
+.input {
+    padding: 15px 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    label {
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: #999;
+    }
+
+    input, select {
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        padding-left: 10px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .dropdown {
+        display: flex;
+
+        select {
+            flex-grow: 1;
+            width: 10px;
+            border-radius: 5px 0 0 5px;
+            box-sizing: content-box;
+            padding: 1px 0;
+            padding-left: 5px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: transparent;
+            background-image: url("../images/Chevron.svg");
+            background-repeat: no-repeat;
+            background-position-x: 95%;
+            background-position-y: 50%;
+            background-size: 10px 5px;
+        }
+
+        input {
+            width: 80px;
+            border-radius: 0 5px 5px 0;
+            padding-left: 15px;
+        }
+    }
+}

@@ -8,6 +8,8 @@
 @import "dashboard";
 @import "form";
 @import "section";
+@import "input";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/react-datepicker/2.8.0/react-datepicker.min.css');
 
 html, body, #root, .App {
     height: 100%;
