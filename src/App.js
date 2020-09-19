@@ -161,7 +161,7 @@ function App() {
 
   return (
     <div className="App">
-      <Dashboard data={dataLong} />
+      <Dashboard data={data} />
     </div>
   );
 }
