@@ -34,7 +34,9 @@ export default class Section extends Component {
         });
         
         // Defaults number of columns to 1 if none are provided
-        const columns = this.props.section.columns === undefined ? 1 : this.props.section.columns ;
+        const columns = this.props.section.columns === undefined ||
+            this.props.section.columns < 1
+            ? 1 : this.props.section.columns ;
         // Prepares a string to repeat for grid allocation
         const columnSize = 100 / columns + "%";
 
