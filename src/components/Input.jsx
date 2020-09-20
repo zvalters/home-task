@@ -4,6 +4,7 @@ import BasicInput from './InputTypes/BasicInput';
 import Currency from './InputTypes/Currency';
 import DropDownInput from './InputTypes/DropDownInput';
 import DateInput from './InputTypes/DateInput';
+import Search from './InputTypes/Search';
 
 export default class Input extends Component {
     static propTypes = {
@@ -27,6 +28,9 @@ export default class Input extends Component {
                 break;
             case "date":
                 input = <DateInput borderLeft={{borderLeft}} input={this.props.input} />;
+                break;
+            case "search":
+                input = <Search borderLeft={{borderLeft}} input={this.props.input} />;
                 break;
             default:
                 input = null;

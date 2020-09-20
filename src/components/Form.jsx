@@ -24,7 +24,7 @@ export default class Form extends Component {
 
     onSubmit(e) {
         e.preventDefault();
-        alert("Submited");
+        alert("Saved");
     }
 
     render() {

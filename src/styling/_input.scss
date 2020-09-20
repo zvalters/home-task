@@ -2,7 +2,6 @@
     padding: 15px 15px 0 15px;
     display: flex;
     flex-direction: column;
-    position: relative;
 
     label {
         font-size: 14px;
@@ -16,6 +15,7 @@
         border: 1px solid #ccc;
         font-size: 16px;
         padding-left: 10px;
+        padding-right: 10px;
         font-family: 'Source Sans Pro', sans-serif;
     }
 
@@ -27,8 +27,7 @@
             width: 10px;
             border-radius: 5px 0 0 5px;
             box-sizing: content-box;
-            padding: 1px 0;
-            padding-left: 5px;
+            padding: 1px 35px 1px 5px;
             -webkit-appearance: none;
             -moz-appearance: none;
             background: transparent;
@@ -44,5 +43,25 @@
             border-radius: 0 5px 5px 0;
             padding-left: 15px;
         }
+    }
+
+    .search {
+        padding-right: 40px;
+        background: transparent;
+        background-image: url("../images/Search.svg");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 50%;
+        background-size: 15px 15px;
+    }
+
+    .date {
+        padding-right: 40px;
+        background: transparent;
+        background-image: url("../images/Calendar.svg");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 50%;
+        background-size: 15px 15px;
     }
 }

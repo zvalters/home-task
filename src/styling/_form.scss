@@ -4,7 +4,7 @@
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 1px 1px 5px #222;
-    position: absolute;
+    position: relative;
 
     :after {
         content  : "";
@@ -58,7 +58,6 @@
         overflow: scroll;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
-        position: relative;
 
         ::-webkit-scrollbar {
             display: none;

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="161.818" viewBox="0 0 160 161.818">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #4e4e4e;
+        stroke-width: 10px;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        fill: #4e4e4e;
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Calendar" transform="translate(-1291.5 -1228)">
+    <line id="Line_6" data-name="Line 6" class="cls-1" x2="150" transform="translate(1296.5 1248.455)"/>
+    <line id="Line_7" data-name="Line 7" class="cls-1" y2="109.091" transform="translate(1296.5 1248.455)"/>
+    <line id="Line_8" data-name="Line 8" class="cls-1" x2="109.091" transform="translate(1323.773 1384.818)"/>
+    <line id="Line_9" data-name="Line 9" class="cls-1" y1="122.727" transform="translate(1446.5 1248.455)"/>
+    <line id="Line_10" data-name="Line 10" class="cls-1" x2="13.636" transform="translate(1432.864 1384.818)"/>
+    <line id="Line_11" data-name="Line 11" class="cls-1" y2="27.273" transform="translate(1446.5 1357.545)"/>
+    <line id="Line_12" data-name="Line 12" class="cls-2" x2="27.273" y2="27.273" transform="translate(1296.5 1357.545)"/>
+    <line id="Line_13" data-name="Line 13" class="cls-1" x2="150" transform="translate(1296.5 1275.727)"/>
+    <line id="Line_14" data-name="Line 14" class="cls-2" x2="13.636" transform="translate(1323.773 1303)"/>
+    <line id="Line_15" data-name="Line 15" class="cls-2" x2="13.636" transform="translate(1351.045 1303)"/>
+    <line id="Line_16" data-name="Line 16" class="cls-2" x2="13.636" transform="translate(1378.318 1303)"/>
+    <line id="Line_17" data-name="Line 17" class="cls-2" x2="13.636" transform="translate(1405.591 1303)"/>
+    <line id="Line_18" data-name="Line 18" class="cls-2" x2="13.636" transform="translate(1323.773 1330.273)"/>
+    <line id="Line_19" data-name="Line 19" class="cls-2" x2="13.636" transform="translate(1351.045 1330.273)"/>
+    <line id="Line_20" data-name="Line 20" class="cls-2" x2="13.636" transform="translate(1378.318 1330.273)"/>
+    <line id="Line_21" data-name="Line 21" class="cls-2" x2="13.636" transform="translate(1405.591 1330.273)"/>
+    <line id="Line_22" data-name="Line 22" class="cls-2" x2="13.636" transform="translate(1323.773 1357.545)"/>
+    <line id="Line_23" data-name="Line 23" class="cls-2" x2="13.636" transform="translate(1351.045 1357.545)"/>
+    <line id="Line_24" data-name="Line 24" class="cls-2" x2="13.636" transform="translate(1378.318 1357.545)"/>
+    <line id="Line_25" data-name="Line 25" class="cls-2" x2="13.636" transform="translate(1405.591 1357.545)"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" class="cls-3" transform="translate(1316.955 1228)">
+      <rect class="cls-4" width="27.273" height="40.909"/>
+      <rect class="cls-5" x="5" y="5" width="17.273" height="30.909"/>
+    </g>
+    <g id="Rectangle_2" data-name="Rectangle 2" class="cls-3" transform="translate(1398.773 1228)">
+      <rect class="cls-4" width="27.273" height="40.909"/>
+      <rect class="cls-5" x="5" y="5" width="17.273" height="30.909"/>
+    </g>
+  </g>
+</svg>

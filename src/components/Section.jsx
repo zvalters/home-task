@@ -15,6 +15,7 @@ export default class Section extends Component {
                 case "currency":
                 case "dropdown-input":
                 case "date":
+                case "search":
                     return <Input key={index} input={item} />;
                 default:
                     return null;
