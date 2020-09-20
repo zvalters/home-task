@@ -13,7 +13,7 @@ You should write this solution with Angular 2+ or React.
 
 The main entry point for this business-form UI is the `<Dashboard />` component.
 It accepts an URL prop that fetches the JSON file containing the markup for the form. 
-The project has been built in React using Create React App.</br>
+The project has been built in React using Create React App. External libraries for data formating have been used (Numeral.js and Moment.js).</br>
 Example:
 ```
 <Dashboard url={JSON_URL} />

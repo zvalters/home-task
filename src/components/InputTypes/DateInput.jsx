@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 export default function DateInput(props) {
     // Uses the moment library for displaying the date in the corract format
     const moment = require("moment");
+    // Disables a warning that doesn't apply in this case. 
+    // It comes up because invalid input is being used, which is necessary in this case
+    moment.suppressDeprecationWarnings = true;
     // Sets up state with the value in the markup
     const [currentDate, setCurrentDate] = useState(
         moment(new Date(props.input.value)).format("MMMM d, YYYY"));
