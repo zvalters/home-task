@@ -13,8 +13,10 @@ export default class Input extends Component {
 
     render() {
 
+        // Prepares a highlighted border for required elements
         const borderLeft = this.props.input.required ? "3px solid #00a250" : ""
 
+        // Selects a more specific type of input
         let input;
         switch(this.props.input.type) {
             case "input":

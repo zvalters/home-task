@@ -1,30 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Dashboard from './components/Dashboard';
 
-const JSON_URL = "https://pastebin.pl/view/raw/1312212d";
+//const JSON_URL = "presets/data.json";                         // The provided file
+//const JSON_URL = "presets/no_widgets.json";                   
+//const JSON_URL = "presets/no_sections.json";
+//const JSON_URL = "presets/no_inputs.json";
+//const JSON_URL = "presets/no_options.json";
+const JSON_URL = "https://pastebin.pl/view/raw/1312212d";     // Data mimicking preview picture
+//const JSON_URL = "https://pastebin.pl/view/raw/8a505377";     // Multiple section sample
 
-export default class App extends Component {
-    state = {
-        hasErrors: false,
-        dataReceived: false,
-        data: {}
-    }
 
-    componentDidMount() {
-        fetch(JSON_URL)
-            .then(res => res.text())
-            .then(data => this.setState({dataReceived: true, data: JSON.parse(data)}))
-            .catch(() => this.setState({hasErrors: true}));
-    }
-
-    render() {
-        return (
-            <div className="App">
-                { !this.state.hasErrors && 
-                this.state.dataReceived && 
-                <Dashboard data={this.state.data} 
-                />}
-            </div>
-        );
-    }
+function App() {
+    return (
+        <div className="App">
+            <Dashboard url={JSON_URL} />
+        </div>
+    );
 }
+
+export default App;

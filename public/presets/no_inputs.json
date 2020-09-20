@@ -1,0 +1,17 @@
+{
+    "widgets": [
+      {
+        "id": 1,
+        "name": "Blobex Corporation",
+        "type": "form",
+        "items": [
+          {
+            "type": "section",
+            "header": "Opportunity details",
+            "columns": 2,
+            "items": []
+          }
+        ]
+      }
+    ]
+  }
