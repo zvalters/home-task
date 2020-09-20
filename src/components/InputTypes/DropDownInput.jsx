@@ -21,14 +21,16 @@ export default function DropDownInput(props) {
 
     // Checks if any options have been provided for the select
     let error = null;
+    let options = null;
     if (props.input.options === undefined ||
-        props.input.options.length === 0) 
+        props.input.options.length === 0) {
             error = <ErrorMessage errorMessage="No options have been provided" />
-
-    // Maps each option for the use in the select
-    const options = props.input.options.map((option, index) => {
-        return <option key={index}>{option}</option>
-    });
+    } else {
+        // Maps each option for the use in the select
+        options = props.input.options.map((option, index) => {
+            return <option key={index}>{option}</option>
+        });
+    }
 
     return error === null ? (
         <div className="dropdown">

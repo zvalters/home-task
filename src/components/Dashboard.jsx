@@ -37,24 +37,26 @@ export default class Dashboard extends Component {
 
         // Keeps track of any errors that should be displayed
         let error = null;
+        let items = null;
 
         // Checks if there have been any errors during fetching of data
         if (this.state.hasErrors) error = <ErrorMessage errorMessage={this.state.errorMessage} />
         // Checks if the data has been received yet
         if (!this.state.dataReceived) return <LoadingDataMessage />;
         // Makes sure the provided data contains any widgets to display
-        if (this.state.data.widgets === undefined || this.state.data.widgets.length === 0) 
+        if (this.state.data.widgets === undefined || this.state.data.widgets.length === 0) {
             error = <ErrorMessage errorMessage="No widgets have been provided" />
-        
-        // Maps each widget to its corresponding component type
-        const items = this.state.data.widgets.map((item, index) => {
-            switch(item.type) {
-                case "form":
-                    return <Form key={index} id={item.id} name={item.name} items={item.items} />;
-                default:
-                    return null;
-            }
-        });
+        } else {
+            // Maps each widget to its corresponding component type
+            items = this.state.data.widgets.map((item, index) => {
+                switch(item.type) {
+                    case "form":
+                        return <Form key={index} id={item.id} name={item.name} items={item.items} />;
+                    default:
+                        return null;
+                }
+            });
+        }
 
         return (
             <div className="dashboard">

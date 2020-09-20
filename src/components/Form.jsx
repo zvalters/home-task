@@ -36,21 +36,23 @@ export default class Form extends Component {
 
         // Keeps track of any errors that should be displayed
         let error = null;
+        let items = null;
 
         // Makes sure the provided data contains any sections to display
         if (this.props.items === undefined ||
-            this.props.items.length === 0) 
+            this.props.items.length === 0) {
                 error = <ErrorMessage errorMessage={"No form sections have been provided for " + this.props.name }/>
-
-        // Maps each item to its corresponding component type
-        const items = this.props.items.map((item, index) => {
-            switch(item.type) {
-                case "section":
-                    return <Section key={index} section={item} />;
-                default:
-                    return null;
-            }
-        });
+        } else {
+            // Maps each item to its corresponding component type
+            items = this.props.items.map((item, index) => {
+                switch(item.type) {
+                    case "section":
+                        return <Section key={index} section={item} />;
+                    default:
+                        return null;
+                }
+            });
+        }
 
         return (
             <form className="form">
